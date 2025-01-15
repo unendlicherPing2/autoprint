@@ -1,0 +1,29 @@
+<form action="/generate" method="post" id="form">
+    <input type="number" name="diameter" id="diameter" step="any" min="60" max="90" value="80.00">
+    <button type="submit">Generiere GCode</button>
+    <span id="loadingIndicator" style="display: none;"><div class="spinner"></div></span>
+</form>
+
+<script>
+    document.getElementById('form').addEventListener('submit', function (e) {
+        var loadingIndicator = document.getElementById('loadingIndicator');
+        loadingIndicator.style.display = 'inline';
+    });
+
+</script>
+
+<style>
+  .spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border-top-color: #000;
+    animation: spin 1s ease-in-out infinite;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+</style>

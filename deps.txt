@@ -1,0 +1,4 @@
+pip install fastapi uvicorn python-multipart
+
+freecad in lib/FreeCAD_1.0.0
+slicer  in lib/PrusaSlicer-2.9.0
