@@ -2,7 +2,7 @@
 
 ## Setup
 ```bash
-pip install fastapi uvicorn python-multipart
+pip install fastapi uvicorn python-multipart requests
 ```
 
 FreeCAD    in lib/FreeCAD_1.0.0
